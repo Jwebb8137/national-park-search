@@ -29,6 +29,7 @@ function displayResults(responseJson) {
           <img src='${responseJson.data[i].images[0].url}'>
           <h3>${responseJson.data[i].fullName}</h3>
           <p>${responseJson.data[i].description}</p>
+          <p>${responseJson.data[i].addresses[0].line1}<br>${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode}</p>
           <a href="${responseJson.data[i].url}">Go To Website</a>
         </li>
       </div>`
